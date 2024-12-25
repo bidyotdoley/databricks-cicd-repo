@@ -28,8 +28,8 @@
      - name: Configure Databricks CLI
        run: |
          databricks configure --token <<EOF
-         $
-         $
+         $DATABRICKS_HOST
+         $DATABRICKS_TOKEN
          EOF
 
      - name: Download Sample Data from DBFS
